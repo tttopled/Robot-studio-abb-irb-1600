@@ -2,15 +2,10 @@ Main contribution
 1. Build the CAD model of 3 conveyor belts using Solidworks
 2. Build CAD models of trash cans and garbage bags using Solidworks
 3. The urdf format of ABB IRB 1200Robot and ABB IRB 1600Robot is constructed and imported into Vrep successfully
-4. An intelligent sorting system simulation workstation is built. Based on the above CAD files, the maximum speed of the 
-conveyor belt that can be matched by ABB IRB 1600Robot is tested.
+4. An intelligent sorting system simulation workstation is built. Based on the above CAD files, the maximum speed of the conveyor belt that can be matched by ABB IRB 1600Robot is tested.
 
 The following steps are required to open the simulation workstation
-1. You need to create a new blank folder to decompress the files in the "packed file" format. 
-The simulation file can be opened directly by using the file in the "pack file" format, and the following steps are not required.
-2. To open files in other formats, you need to create a folder named "IRB 1600 Robot studio" 
-on the desktop and put all the files in it. Unzip all files before it can be run.
-3. "Simulation final version" is the version with added target position tracking function 
-and simulation recognition function, not the version with maximum speed.
-4. "Simulated maximum speed" is the version without adding the target position tracking function 
-and the simulated recognition function, and is the version for testing the performance and speed of the robotic arm.
+1. You need to create a new blank folder to decompress the files in the "packed file" format,suffixed with ".rspag". The simulation file can be opened directly by using the file in the "packed file" format,suffixed with ".rspag", then the following steps are not required.
+2. To open files in other formats, you need to create a folder named "IRB 1600 Robot studio" on the desktop and put all the files in it. Unzip all files then they can be run.
+3. "Solution final version" is the version with added target position tracking function and simulation recognition function, not the version with maximum speed.
+4. "Solution maximum speed" is the version without adding the target position tracking function and the simulated recognition function, and is the version for testing the performance and speed of the robotic arm.
