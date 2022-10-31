@@ -1,0 +1,27 @@
+MODULE Module1
+    VAR num y:=0;
+	CONST robtarget Target_10:=[[480.915,236.77,676.92],[0,-0.707106781,0.707106781,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,0]];
+	CONST robtarget Target_20:=[[29.699626144,355.874016057,111.58001204],[0.000000002,0.707106781,-0.707106781,0.000000007],[0,-1,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,0]];
+	CONST robtarget Target_30:=[[1192.207950487,-330.312717415,676.919992598],[0.000000021,0.707106781,-0.707106781,0.000000022],[-1,-1,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,0]];
+    
+    PROC main()
+        ActUnit CNV1;
+        
+        WHILE 2>1 DO
+            
+            WaitWObj wobj_cnv1;
+            Path_10;
+            DropWObj wobj_cnv1;
+            
+        ENDWHILE
+    ENDPROC
+    PROC Path_10()
+		MoveL Target_10,vmax,z0,Suction_gripper_18cm\WObj:=wobj0;
+		MoveL Target_20,vmax,z10,Suction_gripper_18cm\WObj:=wobj_cnv1;
+		Set do_attach;
+		MoveL Target_30,vmax,fine,Suction_gripper_18cm\WObj:=wobj0;
+		Reset do_attach;
+		MoveL Target_10,vmax,z0,Suction_gripper_18cm\WObj:=wobj0;
+
+    ENDPROC
+ENDMODULE
